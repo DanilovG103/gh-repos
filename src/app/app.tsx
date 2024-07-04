@@ -1,7 +1,9 @@
 import './styles/global.scss'
 
+import { AppRouter } from './router'
+
 const App = () => {
-  return <></>
+  return <AppRouter />
 }
 
 export default App
