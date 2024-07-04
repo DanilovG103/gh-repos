@@ -19,7 +19,10 @@ export const RepositoryCard = ({ repository }: RepositoryCardProps) => {
   return (
     <div className={styles.container}>
       <header className={styles.header}>
-        <Link to={`/repository/${repository.id}`} className={styles.name}>
+        <Link
+          data-cy-test="repository-name"
+          to={`/repository/${repository.id}`}
+          className={styles.name}>
           {repository.name}
         </Link>
         <div>

@@ -18,12 +18,13 @@ export const Paginator = ({
   const arr = Array(pages).fill(null)
 
   return (
-    <div className={styles.container}>
+    <div data-cy-test="paginator" className={styles.container}>
       {arr.map((_, index) => {
         const val = index + 1
 
         return (
           <button
+            data-cy-test="paginator-button"
             key={index}
             disabled={disabled}
             className={cn([

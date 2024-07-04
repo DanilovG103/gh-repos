@@ -20,9 +20,9 @@ const mapRepository = (value: RepositoryByIdResponse): RepositoryDto => ({
   id: value.node.id,
   name: value.node.name,
   description: value.node.description,
-  committedDate: value.node.defaultBranchRef.target.committedDate,
+  committedDate: value.node.defaultBranchRef?.target.committedDate ?? '',
   owner: value.node.owner,
-  languages: value.node.languages.nodes,
+  languages: value.node.languages?.nodes ?? [],
   stargazerCount: value.node.stargazerCount,
   url: value.node.url,
 })

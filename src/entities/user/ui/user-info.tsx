@@ -9,8 +9,16 @@ type UserInfoProps = {
 
 export const UserInfo = ({ user }: UserInfoProps) => (
   <div className={styles.userInfoContainer}>
-    <img className={styles.userAvatar} src={user.avatarUrl} />
-    <Link className={styles.userLink} to={user.url} target="_blank">
+    <img
+      data-cy-test="user-avatar"
+      className={styles.userAvatar}
+      src={user.avatarUrl}
+    />
+    <Link
+      data-cy-test="user-name"
+      className={styles.userLink}
+      to={user.url}
+      target="_blank">
       {user.login}
     </Link>
   </div>

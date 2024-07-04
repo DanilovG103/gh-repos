@@ -34,6 +34,7 @@ export const MainPage = () => {
       <Input
         label="Поиск"
         defaultValue={search}
+        data-cy-test="search"
         onChange={(event) => handleChangeSearch(event.target.value)}
       />
       <RepositoriesList isLoading={isLoading} data={filteredRepositories} />

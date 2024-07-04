@@ -1,0 +1,18 @@
+{
+  "data": {
+    "node": {
+      "id": "R_kgDOMRp1WA",
+      "name": "gh-repos",
+      "url": "https://github.com/DanilovG103/gh-repos",
+      "stargazerCount": 0,
+      "description": null,
+      "defaultBranchRef": null,
+      "owner": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/80414793?u=f073ab0054032f6860a9e9cb635177e6f7a2414b&v=4",
+        "login": "DanilovG103",
+        "url": "https://github.com/DanilovG103"
+      },
+      "languages": null
+    }
+  }
+}

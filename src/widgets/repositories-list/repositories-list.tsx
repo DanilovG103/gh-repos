@@ -11,7 +11,7 @@ export const RepositoriesList = ({
   isLoading,
   data,
 }: RepositoriesListProps) => (
-  <div className={styles.listContainer}>
+  <div data-cy-test="repository-list" className={styles.listContainer}>
     {isLoading ? (
       <p>Загрузка...</p>
     ) : (

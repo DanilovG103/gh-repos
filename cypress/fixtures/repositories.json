@@ -1,0 +1,143 @@
+{
+  "data": {
+    "viewer": {
+      "repositories": {
+        "nodes": [
+          {
+            "id": "R_kgDOMRp1WA",
+            "name": "gh-repos",
+            "url": "https://github.com/DanilovG103/gh-repos",
+            "stargazerCount": 0,
+            "description": null,
+            "defaultBranchRef": {
+              "target": {
+                "committedDate": "2024-07-04T07:55:56Z"
+              }
+            }
+          },
+          {
+            "id": "R_kgDOJfEYWQ",
+            "name": "frontend-admin",
+            "url": "https://github.com/iplatform-space/frontend-admin",
+            "stargazerCount": 0,
+            "description": null,
+            "defaultBranchRef": {
+              "target": {
+                "committedDate": "2024-07-02T19:47:57Z"
+              }
+            }
+          },
+          {
+            "id": "R_kgDOJfEVOA",
+            "name": "frontend-resources",
+            "url": "https://github.com/iplatform-space/frontend-resources",
+            "stargazerCount": 0,
+            "description": null,
+            "defaultBranchRef": {
+              "target": {
+                "committedDate": "2024-07-02T19:44:08Z"
+              }
+            }
+          },
+          {
+            "id": "R_kgDOIzXlpw",
+            "name": "frontend",
+            "url": "https://github.com/iplatform-space/frontend",
+            "stargazerCount": 1,
+            "description": null,
+            "defaultBranchRef": {
+              "target": {
+                "committedDate": "2024-07-02T16:14:38Z"
+              }
+            }
+          },
+          {
+            "id": "MDEwOlJlcG9zaXRvcnkzODIxMjUxOTc=",
+            "name": "courses",
+            "url": "https://github.com/DanilovG103/courses",
+            "stargazerCount": 0,
+            "description": null,
+            "defaultBranchRef": {
+              "target": {
+                "committedDate": "2021-07-01T18:41:37Z"
+              }
+            }
+          },
+          {
+            "id": "MDEwOlJlcG9zaXRvcnkzNTAwMzAzMDY=",
+            "name": "refr",
+            "url": "https://github.com/DanilovG103/refr",
+            "stargazerCount": 0,
+            "description": null,
+            "defaultBranchRef": {
+              "target": {
+                "committedDate": "2021-03-23T15:42:01Z"
+              }
+            }
+          },
+          {
+            "id": "R_kgDOKHf1Nw",
+            "name": "react-native-mdc-datepicker",
+            "url": "https://github.com/DanilovG103/react-native-mdc-datepicker",
+            "stargazerCount": 7,
+            "description": "React Native Material Design Datepicker and Timepicker for android",
+            "defaultBranchRef": {
+              "target": {
+                "committedDate": "2023-11-14T07:56:25Z"
+              }
+            }
+          },
+          {
+            "id": "R_kgDOK7I8Ng",
+            "name": "payroll_frontend",
+            "url": "https://github.com/Bastion-RND/payroll_frontend",
+            "stargazerCount": 0,
+            "description": null,
+            "defaultBranchRef": {
+              "target": {
+                "committedDate": "2023-12-18T15:07:12Z"
+              }
+            }
+          },
+          {
+            "id": "R_kgDOK4Zmpw",
+            "name": "rick-and-morty-web",
+            "url": "https://github.com/DanilovG103/rick-and-morty-web",
+            "stargazerCount": 0,
+            "description": null,
+            "defaultBranchRef": {
+              "target": {
+                "committedDate": "2023-12-13T08:21:18Z"
+              }
+            }
+          },
+          {
+            "id": "R_kgDOIzkwag",
+            "name": "shop-admin",
+            "url": "https://github.com/DanilovG103/shop-admin",
+            "stargazerCount": 0,
+            "description": null,
+            "defaultBranchRef": {
+              "target": {
+                "committedDate": "2023-06-11T13:06:26Z"
+              }
+            }
+          },
+          {
+            "id": "R_kgDOKApIsQ",
+            "name": "icos-quiz-3",
+            "url": "https://github.com/trubitsynandrey/icos-quiz-3",
+            "stargazerCount": 0,
+            "description": null,
+            "defaultBranchRef": {
+              "target": {
+                "committedDate": "2023-08-28T12:59:42Z"
+              }
+            }
+          }
+        ],
+        "totalCount": 11
+      }
+    }
+  }
+}

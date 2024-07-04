@@ -26,26 +26,48 @@ export const RepositoryPage = () => {
       <div className={styles.pageContainer}>
         <header className={styles.header}>
           <div>
-            <h1 className={styles.name}>{data.name}</h1>
+            <h1 data-cy-test="repository-name" className={styles.name}>
+              {data.name}
+            </h1>
             <div>
               <StarIcon />
-              <span>{formatStarsCount(data.stargazerCount)}</span>
+              <span data-cy-test="repository-stars">
+                {formatStarsCount(data.stargazerCount)}
+              </span>
             </div>
-            <span>Последний коммит {formatCommitDate(data.committedDate)}</span>
+            {data.committedDate && (
+              <span data-cy-test="repository-commit-date">
+                Последний коммит {formatCommitDate(data.committedDate)}
+              </span>
+            )}
           </div>
-          <UserInfo user={data.owner} />
+          <UserInfo data-cy-test="repository-owner" user={data.owner} />
         </header>
+        {!!data.description && (
+          <>
+            <hr className={styles.separator} />
+            <p
+              data-cy-test="repository-description"
+              className={styles.description}>
+              {data.description}
+            </p>
+          </>
+        )}
         <hr className={styles.separator} />
-        <p className={styles.description}>{data.description}</p>
-        <hr className={styles.separator} />
-        <div>
-          <span className={styles.usedLanguagesTitle}>Используемые языки</span>
-          <div className={styles.usedLanguagesWrapper}>
-            {data.languages.map((language) => (
-              <LanguageChip key={language.name} language={language} />
-            ))}
+        {!!data.languages.length && (
+          <div>
+            <span className={styles.usedLanguagesTitle}>
+              Используемые языки
+            </span>
+            <div
+              data-cy-test="repository-languages"
+              className={styles.usedLanguagesWrapper}>
+              {data.languages.map((language) => (
+                <LanguageChip key={language.name} language={language} />
+              ))}
+            </div>
           </div>
-        </div>
+        )}
       </div>
     </Layout>
   )
