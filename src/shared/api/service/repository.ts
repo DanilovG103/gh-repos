@@ -48,7 +48,7 @@ const getRepositoryById = async (id: string) =>
             login
             url
           }
-          languages(first: 100, orderBy: {field: SIZE, direction: DESC }) {
+          languages(first: 10, orderBy: {field: SIZE, direction: DESC }) {
             ... on LanguageConnection {
               nodes {
                 color
@@ -67,7 +67,7 @@ export const getMyRepositories = async () =>
   await gql<MyRepositoriesResponse>(`
   query {
     viewer {
-      repositories(first: 10, orderBy:{field:UPDATED_AT, direction: DESC}) {
+      repositories(first: 100, orderBy:{field:UPDATED_AT, direction: DESC}) {
         nodes {
           ${repositoryFragment}
         }
