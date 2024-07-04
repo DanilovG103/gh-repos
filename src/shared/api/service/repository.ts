@@ -31,6 +31,7 @@ const getRepositories = async (variables: RepositoryVariables) =>
           ${repositoryFragment}
         }
       }
+      repositoryCount
   }}`,
     variables,
   )
@@ -47,7 +48,7 @@ const getRepositoryById = async (id: string) =>
             login
             url
           }
-          languages(first: 10, orderBy: {field: SIZE, direction: DESC }) {
+          languages(first: 100, orderBy: {field: SIZE, direction: DESC }) {
             ... on LanguageConnection {
               nodes {
                 color
@@ -70,6 +71,7 @@ export const getMyRepositories = async () =>
         nodes {
           ${repositoryFragment}
         }
+        totalCount
       }
     }
   }`)

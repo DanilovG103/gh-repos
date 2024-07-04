@@ -13,17 +13,23 @@ export const getRepositoriesFx = createEffect(
     if (!variables.search) {
       const myRepos = await repositoryService.getMy()
 
-      return myRepos.viewer.repositories.nodes
+      return {
+        data: myRepos.viewer.repositories.nodes,
+        total: myRepos.viewer.repositories.totalCount,
+      }
     }
     const { search } = await repositoryService.getList(variables)
 
-    return search.nodes
+    return { data: search.nodes, total: search.repositoryCount }
   },
 )
 
 const repositoriesStore = createStore<RepositorySrc[]>([])
+const repositoryCountStore = createStore(0)
 
-repositoriesStore.on(getRepositoriesFx.doneData, (_, result) => result)
+repositoriesStore.on(getRepositoriesFx.doneData, (_, result) => result.data)
+
+repositoryCountStore.on(getRepositoriesFx.doneData, (_, result) => result.total)
 
 const mapRepository = (value: RepositorySrc): RepositoryDto => ({
   id: value.id,
@@ -36,5 +42,7 @@ const mapRepository = (value: RepositorySrc): RepositoryDto => ({
 
 export const useRepositories = () =>
   useStoreMap(repositoriesStore, (state) => state.map(mapRepository))
+
+export const useRepositoryCount = () => useUnit(repositoryCountStore)
 
 export const useIsRepositoryLoading = () => useUnit(getRepositoriesFx.pending)

@@ -20,3 +20,6 @@
   background-color: $paginator-bg-active;
   color: $paginator-text-active;
 }
+.disabled {
+  cursor: not-allowed;
+}

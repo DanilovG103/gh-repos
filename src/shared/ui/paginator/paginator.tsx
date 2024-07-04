@@ -6,9 +6,15 @@ type PaginationProps = {
   value: number
   onChange: (value: number) => void
   pages: number
+  disabled?: boolean
 }
 
-export const Paginator = ({ value, onChange, pages }: PaginationProps) => {
+export const Paginator = ({
+  value,
+  onChange,
+  pages,
+  disabled,
+}: PaginationProps) => {
   const arr = Array(pages).fill(null)
 
   return (
@@ -19,7 +25,11 @@ export const Paginator = ({ value, onChange, pages }: PaginationProps) => {
         return (
           <button
             key={index}
-            className={cn([styles.option, { [styles.active]: value === val }])}
+            disabled={disabled}
+            className={cn([
+              styles.option,
+              { [styles.active]: value === val, [styles.disabled]: disabled },
+            ])}
             onClick={() => onChange(val)}>
             {val}
           </button>

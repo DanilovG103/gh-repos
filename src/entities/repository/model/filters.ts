@@ -17,6 +17,7 @@ export const useRepositoryFilter = () => {
 
             return prev
           }
+          prev.delete('page')
           prev.set('search', value)
 
           return prev

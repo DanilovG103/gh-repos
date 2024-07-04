@@ -14,6 +14,7 @@ export type RepositorySrc = {
 export type RepositoryResponse = {
   search: {
     nodes: RepositorySrc[]
+    repositoryCount: number
   }
 }
 
@@ -36,6 +37,7 @@ export type MyRepositoriesResponse = {
   viewer: {
     repositories: {
       nodes: RepositorySrc[]
+      totalCount: number
     }
   }
 }
