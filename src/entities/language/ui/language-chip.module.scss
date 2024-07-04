@@ -1,0 +1,19 @@
+@import "src/shared/theme/variables";
+
+.container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.indicator {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
+.name {
+  color: $text-primary;
+}
+
+

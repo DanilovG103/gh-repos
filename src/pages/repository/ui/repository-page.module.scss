@@ -1,0 +1,47 @@
+@import "src/shared/theme/variables";
+
+.back {
+  all: unset;
+  font-size: 18px;
+  color: $text-primary;
+  cursor: pointer;
+}
+
+.pageContainer {
+  min-height: 100vh;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.name {
+  font-size: 32px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.description {
+  font-size: 24px;
+}
+
+.usedLanguagesWrapper {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 8px;
+}
+
+.usedLanguagesTitle {
+  font-size: 22px;
+  line-height: 26px;
+  color: $text-primary;
+}
+
+.separator {
+  margin: 8px 0;
+  background-color: $separator;
+}

@@ -1,0 +1,22 @@
+@import "src/shared/theme/variables";
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+.option {
+  width: 40px;
+  height: 40px;
+  border-radius: 12px;
+  border-width: 1px;
+  cursor: pointer;
+  outline: none;
+}
+
+.active {
+  background-color: $paginator-bg-active;
+  color: $paginator-text-active;
+}
